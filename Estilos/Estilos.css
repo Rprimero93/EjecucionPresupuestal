@@ -1,0 +1,153 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 1.5em;
+}
+
+/* Estilos de la tabla */
+.gastos-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.gastos-table th,
+.gastos-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    /*text-align: center;*/
+}
+
+.gastos-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #333;
+}
+
+.gastos-table thead th {
+    background-color: #3F3D3E;
+    border-bottom: 2px solid #ddd;
+    color: #fff;
+}
+
+/* Estilos para los grupos de funcionamiento */
+.grupo-funcionamiento:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.grupo-funcionamiento:hover {
+    background-color: #C1F0C8;
+}
+
+/* Estilos para los grupos de inversión */
+.grupo-inversion:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.grupo-inversion:hover {
+    background-color: #d1ecf1;
+}
+
+/* Estilos para los encabezados de grupo */
+.grupo-header {
+    background-color: #2c3e50;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.1em;
+}
+
+/* Estilos específicos para funcionamiento */
+.grupo-funcionamiento .grupo-header {
+    background-color: #d4edda;
+    color: #333;
+}
+
+/* Estilos específicos para inversión */
+.grupo-inversion .grupo-header {
+    background-color: #d1ecf1;
+    color: #333;
+}
+
+/* Estilos para las filas de totales */
+.total-funcionamiento {
+    background-color: #d4edda !important;
+    font-weight: bold;
+}
+
+.total-inversion {
+    background-color: #d1ecf1 !important;
+    font-weight: bold;
+
+}
+
+.total-p-Infraestructura {
+    background-color: #2c3e50 !important;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+.total-funcionamiento td,
+.total-inversion td {
+    border-top: 2px solid #ddd;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        overflow-x: auto;
+    }
+
+    .gastos-table {
+        font-size: 12px;
+        min-width: 800px;
+    }
+
+    .gastos-table th,
+    .gastos-table td {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+}
+
+/* Efectos visuales adicionales */
+.gastos-table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.gastos-table td {
+    transition: all 0.2s ease;
+}
