@@ -35,13 +35,15 @@ h1 {
     border-collapse: collapse;
     margin-bottom: 20px;
     font-size: 14px;
+    
 }
 
 .gastos-table th,
+
 .gastos-table td {
     border: 1px solid #ddd;
     padding: 8px;
-    /*text-align: center;*/
+    text-align: left;
 }
 
 .gastos-table th {
@@ -54,6 +56,11 @@ h1 {
     background-color: #3F3D3E;
     border-bottom: 2px solid #ddd;
     color: #fff;
+}
+
+/* Nueva clase para alinear valores numéricos a la izquierda */
+.valor-numerico {
+    text-align:right !important;
 }
 
 /* Estilos para los grupos de funcionamiento */
@@ -146,6 +153,7 @@ h1 {
 /* Efectos visuales adicionales */
 .gastos-table tbody tr {
     transition: background-color 0.3s ease;
+    
 }
 
 .gastos-table td {
