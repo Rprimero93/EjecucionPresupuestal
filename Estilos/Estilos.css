@@ -50,6 +50,7 @@ h1 {
     background-color: #f2f2f2;
     font-weight: bold;
     color: #333;
+    text-align: center;
 }
 
 .gastos-table thead th {
